@@ -6,3 +6,12 @@ let isPublished = true;
 let x = 'Hello ahmed';
 let ids = [1, 2, 3, 4, 5];
 let arr = [2, 3, 'names', 'Asha'];
+// Tuple
+let person = [1, 'name', false];
+// Tuple array
+let employee;
+employee = [
+    [1, 'ahmed'],
+    [2, 'abukar'],
+    [3, 'omar'],
+];

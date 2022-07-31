@@ -1,2 +1,3 @@
 "use strict";
-let ourname = 'ahmed';
+let id = 3;
+console.log('ID:', id);

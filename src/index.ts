@@ -1,1 +1,3 @@
-let ourname: string = 'ahmed'
+let id: number = 3
+
+console.log('ID:',id);

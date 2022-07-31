@@ -1,0 +1,1 @@
+let ourname: string = 'ahmed'

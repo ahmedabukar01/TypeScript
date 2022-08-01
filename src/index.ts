@@ -119,8 +119,39 @@ class Person {
         this.name = name
         this.phone = phone
     }
+
+    register(){
+        return `${this.name} is now registered`;
+    }
 }
 
 const ahmed = new Person(1,'ahmed',34);
 
-console.log(ahmed)
+console.log(ahmed.register())
+
+// Classes with interface
+interface classInterface {
+    id: number
+    name: string
+    register(): string
+}
+
+class Person2 implements classInterface {
+    id: number
+    name: string
+    phone: number
+
+    constructor(id: number, name: string, phone: number){
+        this.id = id
+        this.name = name
+        this.phone = phone
+    }
+
+    register(){
+        return `${this.name} is now registered`;
+    }
+}
+
+const omar = new Person2(2,'omar',34);
+
+console.log(omar.register())

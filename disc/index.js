@@ -76,6 +76,21 @@ class Person {
         this.name = name;
         this.phone = phone;
     }
+    register() {
+        return `${this.name} is now registered`;
+    }
 }
 const ahmed = new Person(1, 'ahmed', 34);
-console.log(ahmed);
+console.log(ahmed.register());
+class Person2 {
+    constructor(id, name, phone) {
+        this.id = id;
+        this.name = name;
+        this.phone = phone;
+    }
+    register() {
+        return `${this.name} is now registered`;
+    }
+}
+const omar = new Person2(2, 'omar', 34);
+console.log(omar.register());

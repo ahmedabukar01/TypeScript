@@ -35,3 +35,14 @@ var direction2;
 })(direction2 || (direction2 = {}));
 console.log(direction1.Left);
 console.log(direction2.Left);
+// Objects
+const user1 = {
+    id: 1,
+    name: 'John',
+    phone: '2532212'
+};
+const user2 = {
+    id: 3,
+    name: 'Omar',
+    phone: '616161'
+};

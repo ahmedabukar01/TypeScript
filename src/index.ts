@@ -39,3 +39,28 @@ enum direction2{
 
 console.log(direction1.Left);
 console.log(direction2.Left);
+
+// Objects
+const user1: {
+    id: number,
+    name: string,
+    phone: string
+} = {
+    id: 1,
+    name: 'John',
+    phone: '2532212'
+}
+
+// another way of creating object data types
+type User2 = {
+    id: string | number,
+    name: string,
+    phone: number | string,
+
+}
+
+const user2: User2 = {
+    id: 3,
+    name: 'Omar',
+    phone: '616161'
+}

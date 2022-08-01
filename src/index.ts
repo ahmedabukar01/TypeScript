@@ -54,7 +54,7 @@ const user1: {
 // another way of creating object data types
 type User2 = {
     id: string | number,
-    name: string,
+    readonly name: string,
     phone: number | string,
 }
 
@@ -63,6 +63,8 @@ const user2: User2 = {
     name: 'Omar',
     phone: '616161'
 }
+
+// user2.name = 'ali'
 
 // Type Assertions
 let cId: any = 2;
@@ -83,3 +85,17 @@ function log(message: string | number): void {
 console.log(add(3,2));
 
 log('here we are')
+
+// Interfaces
+interface UserInterface{
+    readonly id: number,
+    name: string,
+    phone: number,
+    email?: string,
+}
+
+let inUser: UserInterface = {
+    id: 4,
+    name: 'nur',
+    phone: 34342333,
+}

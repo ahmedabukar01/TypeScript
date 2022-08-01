@@ -46,6 +46,7 @@ const user2 = {
     name: 'Omar',
     phone: '616161'
 };
+// user2.name = 'ali'
 // Type Assertions
 let cId = 2;
 // let customerId = <number>cId;
@@ -61,3 +62,8 @@ function log(message) {
 }
 console.log(add(3, 2));
 log('here we are');
+let inUser = {
+    id: 4,
+    name: 'nur',
+    phone: 34342333,
+};

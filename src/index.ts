@@ -74,7 +74,7 @@ let customerId = cId as number;
 customerId = 3
 
 // function
-function add(x: number,y: number): number{
+function func(x: number,y: number): number{
     return x + y;
 }
 
@@ -82,7 +82,7 @@ function add(x: number,y: number): number{
 function log(message: string | number): void {
     console.log(message)
 }
-console.log(add(3,2));
+console.log(func(3,2));
 
 log('here we are')
 
@@ -99,3 +99,11 @@ let inUser: UserInterface = {
     name: 'nur',
     phone: 34342333,
 }
+
+// function interfaces
+interface mathFunc {
+    (x: number, y: number): number
+}
+
+const add: mathFunc = (x: number, y: number): number => x + y;
+const sub: mathFunc = (x: number, y: number): number => x - y;

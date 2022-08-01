@@ -53,17 +53,19 @@ let cId = 2;
 let customerId = cId;
 customerId = 3;
 // function
-function add(x, y) {
+function func(x, y) {
     return x + y;
 }
 // void
 function log(message) {
     console.log(message);
 }
-console.log(add(3, 2));
+console.log(func(3, 2));
 log('here we are');
 let inUser = {
     id: 4,
     name: 'nur',
     phone: 34342333,
 };
+const add = (x, y) => x + y;
+const sub = (x, y) => x - y;

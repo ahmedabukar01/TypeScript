@@ -46,3 +46,8 @@ const user2 = {
     name: 'Omar',
     phone: '616161'
 };
+// Type Assertions
+let cId = 2;
+// let customerId = <number>cId;
+let customerId = cId;
+customerId = 3;

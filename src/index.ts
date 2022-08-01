@@ -56,7 +56,6 @@ type User2 = {
     id: string | number,
     name: string,
     phone: number | string,
-
 }
 
 const user2: User2 = {
@@ -64,3 +63,10 @@ const user2: User2 = {
     name: 'Omar',
     phone: '616161'
 }
+
+// Type Assertions
+let cId: any = 2;
+// let customerId = <number>cId;
+let customerId = cId as number;
+
+customerId = 3

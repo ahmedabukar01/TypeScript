@@ -22,3 +22,20 @@ employee = [
 // Union
 let pId: string | number = 22;
 pId = '22';
+
+// Enums 
+enum direction1{
+    Up,
+    Down,
+    Left,
+    Right,
+}
+enum direction2{
+    Up = 'Up',
+    Down = 'Down',
+    Left = 'Left',
+    Right = 'Right',
+}
+
+console.log(direction1.Left);
+console.log(direction2.Left);

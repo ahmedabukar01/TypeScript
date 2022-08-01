@@ -70,3 +70,16 @@ let cId: any = 2;
 let customerId = cId as number;
 
 customerId = 3
+
+// function
+function add(x: number,y: number): number{
+    return x + y;
+}
+
+// void
+function log(message: string | number): void {
+    console.log(message)
+}
+console.log(add(3,2));
+
+log('here we are')

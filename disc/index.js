@@ -51,3 +51,13 @@ let cId = 2;
 // let customerId = <number>cId;
 let customerId = cId;
 customerId = 3;
+// function
+function add(x, y) {
+    return x + y;
+}
+// void
+function log(message) {
+    console.log(message);
+}
+console.log(add(3, 2));
+log('here we are');

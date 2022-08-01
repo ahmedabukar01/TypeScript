@@ -19,3 +19,6 @@ employee = [
     [3,'omar'],
 ]
 
+// Union
+let pId: string | number = 22;
+pId = '22';

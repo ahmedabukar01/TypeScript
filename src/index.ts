@@ -171,7 +171,6 @@ const emp = new Employee(4, 'Hassan', 333, 'Developer')
 console.log(emp.register())
 
 // Generics
-
 function getArray<T>(items: T[]): T[]{
     return items
 }

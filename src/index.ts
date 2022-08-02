@@ -139,9 +139,9 @@ interface classInterface {
 class Person2 implements classInterface {
     id: number
     name: string
-    phone: number
+    phone?: number
 
-    constructor(id: number, name: string, phone: number){
+    constructor(id: number, name: string, phone?: number){
         this.id = id
         this.name = name
         this.phone = phone
@@ -155,3 +155,17 @@ class Person2 implements classInterface {
 const omar = new Person2(2,'omar',34);
 
 console.log(omar.register())
+
+// Extending Classes (SubClasses)
+
+class Employee extends Person {
+    position: string
+
+    constructor(id: number, name: string, phone: number, position: string){
+        super(id,name,phone)
+        this.position = position
+    }
+}
+
+const emp = new Employee(4, 'Hassan', 333, 'Developer')
+console.log(emp.register())

@@ -94,3 +94,12 @@ class Person2 {
 }
 const omar = new Person2(2, 'omar', 34);
 console.log(omar.register());
+// Extending Classes (SubClasses)
+class Employee extends Person {
+    constructor(id, name, phone, position) {
+        super(id, name, phone);
+        this.position = position;
+    }
+}
+const emp = new Employee(4, 'Hassan', 333, 'Developer');
+console.log(emp.register());
